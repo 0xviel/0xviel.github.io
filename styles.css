@@ -1,125 +1,98 @@
+/* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
 }
 
+/* Background Retro */
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Prevent scrolling */
+  background-color: #f4f1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.glitch-container {
-    position: relative;
+/* Jendela Retro */
+.window {
+  width: 400px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 0 #000;
 }
 
-.glitch {
-    font-size: 10vw; /* Use viewport width for responsiveness */
-    font-weight: bold;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    white-space: nowrap;
+/* Header Jendela */
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f1e1;
+  padding: 10px;
+  border-bottom: 2px solid black;
 }
 
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background: transparent;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
+.window-title {
+  font-weight: bold;
 }
 
-.glitch::before {
-    left: 2px;
-    text-shadow: -2px 0 red;
-    animation: glitch 1.5s infinite linear alternate-reverse;
+/* Tombol Jendela */
+.window-buttons .btn {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
 }
 
-.glitch::after {
-    left: -2px;
-    text-shadow: -2px 0 blue;
-    animation: glitch2 2s infinite linear alternate-reverse;
+.btn.close { background-color: #ff5f56; }
+.btn.minimize { background-color: #ffbd2e; }
+.btn.maximize { background-color: #27c93f; }
+
+/* Isi Jendela */
+.window-body {
+  padding: 20px;
 }
 
-@keyframes glitch {
-    0% {
-        clip: rect(0, 900px, 0, 0);
-    }
-    10% {
-        clip: rect(10px, 900px, 40px, 0);
-    }
-    20% {
-        clip: rect(85px, 900px, 120px, 0);
-    }
-    30% {
-        clip: rect(15px, 900px, 60px, 0);
-    }
-    40% {
-        clip: rect(10px, 900px, 30px, 0);
-    }
-    50% {
-        clip: rect(0, 900px, 5px, 0);
-    }
-    60% {
-        clip: rect(60px, 900px, 85px, 0);
-    }
-    70% {
-        clip: rect(80px, 900px, 100px, 0);
-    }
-    80% {
-        clip: rect(40px, 900px, 75px, 0);
-    }
-    90% {
-        clip: rect(20px, 900px, 50px, 0);
-    }
-    100% {
-        clip: rect(0, 900px, 0, 0);
-    }
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-@keyframes glitch2 {
-    0% {
-        clip: rect(0, 900px, 0, 0);
-    }
-    10% {
-        clip: rect(70px, 900px, 100px, 0);
-    }
-    20% {
-        clip: rect(30px, 900px, 60px, 0);
-    }
-    30% {
-        clip: rect(50px, 900px, 90px, 0);
-    }
-    40% {
-        clip: rect(0, 900px, 10px, 0);
-    }
-    50% {
-        clip: rect(10px, 900px, 30px, 0);
-    }
-    60% {
-        clip: rect(40px, 900px, 70px, 0);
-    }
-    70% {
-        clip: rect(50px, 900px, 80px, 0);
-    }
-    80% {
-        clip: rect(20px, 900px, 40px, 0);
-    }
-    90% {
-        clip: rect(10px, 900px, 20px, 0);
-    }
-    100% {
-        clip: rect(0, 900px, 0, 0);
-    }
+.subtitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Links */
+.links a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f1e1;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.links a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+  .window {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
 }
