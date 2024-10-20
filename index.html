@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Retro Linktree</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="script.js" defer></script> <!-- Memuat JavaScript -->
 </head>
 <body>
   <div class="window">
     <div class="window-header">
-      <span class="window-title">Retro Links</span>
+      <span class="window-title" id="date"></span>
       <div class="window-buttons">
         <button class="btn close"></button>
         <button class="btn minimize"></button>
@@ -18,12 +20,31 @@
     </div>
 
     <div class="window-body">
-      <h1 class="title">Welcome!</h1>
-      <p class="subtitle">Explore my links below:</p>
+      <!-- Profil dan Bio -->
+      <div class="profile">
+        <img src="img.jpg" alt="Profile Picture" class="profile-pic">
+        <h2 class="name">Dimas Saputra</h2>
+        <p class="bio">Nothing</p>
+      </div>
+
+      <!-- Link Section -->
+ 
       <div class="links">
-        <a href="https://instagram.com/0xviel" target="_blank">Instagram</a>
-        <a href="https://github.com/0xviel" target="_blank">Github</a>
-        <a href="https://secreto.site/aqlwp7" target="_blank">Secreto</a>
+        <a href="https://instagram.com/0xviel" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://github.com/0xviel" target="_blank">
+          <i class="fab fa-github"></i> Github
+        </a>
+        <a href="https://www.tiktok.com/@0xviel" target="_blank">
+          <i class="fab fa-tiktok"></i> Tiktok
+        </a>
+        <a href="https://open.spotify.com/user/f5fzmoviuy2j6g89t4hdd15qy" target="_blank">
+          <i class="fab fa-spotify"></i> Spotify
+        </a>
+        <a href="https://secreto.site/aqlwp7" target="_blank">
+          <i class="fas fa-comment-dots"></i> Secreto
+        </a>
       </div>
     </div>
   </div>

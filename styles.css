@@ -1,4 +1,4 @@
-
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
@@ -57,28 +57,48 @@ body {
   padding: 20px;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 10px;
+/* Profil */
+.profile {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.subtitle {
-  margin-bottom: 20px;
-  text-align: center;
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #333;
 }
 
 /* Links */
 .links a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 10px 0;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background-color: #f4f1e1;
   border: 2px solid black;
   text-decoration: none;
   color: black;
   transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.links a i {
+  font-size: 18px;
 }
 
 .links a:hover {
@@ -92,7 +112,15 @@ body {
     width: 90%;
   }
 
-  .title {
-    font-size: 20px;
+  .name {
+    font-size: 18px;
+  }
+
+  .bio {
+    font-size: 12px;
+  }
+
+  .links a {
+    font-size: 14px;
   }
 }
