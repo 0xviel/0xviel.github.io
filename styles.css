@@ -8,7 +8,7 @@
 
 /* Background Retro */
 body {
-  background-color: #f4f1e1;
+  background-color: #FAFAFA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@ body {
 .window {
   width: 400px;
   border: 2px solid black;
-  background-color: #ffffff;
+  background-color: #FAFAFA;
   box-shadow: 5px 5px 0 #000;
 }
 
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4f1e1;
+  background-color: #F3FBD2;
   padding: 10px;
   border-bottom: 2px solid black;
 }
